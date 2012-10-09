@@ -68,7 +68,7 @@
 					$chart->drawScale($dataSet->GetData(),$dataSet->GetDataDescription(),SCALE_NORMAL,150,150,150,TRUE,0,0);     
 					$chart->drawGrid(4,TRUE,230,230,230,50);   
 					$chart->drawFilledLineGraph($dataSet->GetData(),$dataSet->GetDataDescription(), 50, TRUE);  
-					$chart->setFontProperties("Fonts/tahoma.ttf",10);  
+					$chart->setFontProperties("fonts/tahoma.ttf",10);  
 					$chart->drawTitle(40,22,"Stats on 6 hours for $name ($ip:$port)",50,50,50,585);  
 						
 					$cache->WriteToCache("Small$serverid",$dataSet->GetData(),$chart);  
@@ -94,7 +94,7 @@
 					$cache->GetFromCache("Big$serverid",$dataSet->GetData());  
 					  
 					$chart = new pChart(1800,230);  
-					$chart->setFontProperties("Fonts/tahoma.ttf",8);  
+					$chart->setFontProperties("fonts/tahoma.ttf",8);  
 					$chart->setGraphArea(60,30,1750,200);  
 					$chart->drawFilledRoundedRectangle(7,7,1793,223,5,240,240,240);  
 					$chart->drawRoundedRectangle(5,5,1795,225,5,230,230,230);  

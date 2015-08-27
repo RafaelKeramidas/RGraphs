@@ -1,3 +1,5 @@
+NOTE: This project is old and not maintained anymore. 
+
 RGraph - SA-MP Server Graphs
 
 # ABOUT
